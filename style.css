@@ -1,0 +1,142 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-image: url('mybackground.jpg');
+  background-repeat: no-repeat;       /* avoid repeating */
+  background-position: center center; /* center image */
+  background-attachment: fixed;       /* fix background on scroll */
+  
+  /* Adjust size options: */
+
+  background-size: cover;   /* fills the area, may crop */
+  /* or */
+  background-size: contain; /* fits inside area, may leave gaps */
+  /* or */
+  background-size: 50%; /* stretch to exactly fill width & height */
+  color: black;
+}
+
+header {
+  background: url('your-old-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 100, 0, 0.85); /* solid green nav */
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  margin-top: 100px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: black !important;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: black !important;
+}
+
+.btn {
+  display: inline-block;
+  background: #88c057;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #f9d6e3; /* soft pink card background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color: #2e4e1c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2e4e1c;
+  color: white;
+}
+.product-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #2e4e1c; /* greenish text */
+}
+
+.product-list li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
